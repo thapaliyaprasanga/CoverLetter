@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+    <!-- <link rel="stylesheet" href="/styles/style.css" /> -->
+    <link rel="stylesheet" href="styles/style.css">
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.min.js"
+      integrity="sha512-OqcrADJLG261FZjar4Z6c4CfLqd861A3yPNMb+vRQ2JwzFT49WT4lozrh3bcKxHxtDTgNiqgYbEUStzvZQRfgQ=="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section>
+      <button
+        onclick="screenshot()"
+        id="screenshot-btn"
+        class="download-btn-top"
+      >
+        Download
+      </button>
+      <div id="application-div" class="application-div">
+        <div class="top-intro">
+          <div><label>Name:</label> <span class="name"></span></div>
+          <div><label>Email:</label> <span id="email"></span></div>
+          <div><label>Mobile:</label> <span id="mobile">adsf</span></div>
+        </div>
+        <div class="written-to">
+          <p>The HostMaster</p>
+          <p>NP ccTLD Registration Services</p>
+          <p>Mercantile Communications Pvt. Ltd.</p>
+          <p>Email: hostmaster@mercantile.com.np</p>
+        </div>
+        <div id="submitted-date"></div>
+        <div class="subject">
+          <label
+            >Subject: Application for
+            <span class="domain-extension"></span> domain registration</label
+          >
+        </div>
+        <div class="application-description">
+          <div>
+            <p>Dear Sir/Madam,</p>
+            <p>
+              I am writing to request the registration of domain under my name
+              <span class="name"></span> with domain
+              <span class="domain-extension"></span>.
+            </p>
+          </div>
+
+          <p>
+            Applying for registration of the domain
+            <span class="domain-extension"></span> follows all the term and
+            conditions of Domain registration residing at
+            “https://register.com.np/terms-and-conditions”. I submit the
+            required for the domain registrations as per the rule.
+          </p>
+
+          <p>
+            Thank you for “helping the industry and civil society to make them
+            online”. Entry area for <span id="just-domain-extension"></span> is
+            "commercial" and Notes is "open ccTLD, any person or entity is
+            permitted to register" as mentioned on
+            “https://register.com.np/np-ccTLDs”.
+          </p>
+
+          <p>
+            I would be very grateful indeed for your help. Needless to say, I
+            will be glad to supply you with any further information you may
+            need. I look forward to hearing from you soon.
+          </p>
+
+          <div>
+            <p>Your Sincerely,</p>
+            <p><span class="name"></span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
